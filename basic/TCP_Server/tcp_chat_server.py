@@ -16,3 +16,7 @@ while true:
     if not data:
         break;
     print("Client",data.decode())
+    
+    reply = input("Server: ")
+    conn.sendall(reply.encode())
+conn.close()
