@@ -11,7 +11,7 @@ print("Server is listening on port 8080...")
 conn, addr = server.accept()
 print(f"Connected by {addr}")
 
-while true:
+while True:
     data = conn.recv(1024)
     if not data:
         break
