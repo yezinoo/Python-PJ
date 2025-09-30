@@ -14,7 +14,7 @@ print(f"Connected by {addr}")
 while true:
     data = conn.recv(1024)
     if not data:
-        break;
+        break
     print("Client",data.decode())
     
     reply = input("Server: ")
